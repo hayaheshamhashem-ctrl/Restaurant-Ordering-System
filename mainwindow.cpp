@@ -154,7 +154,6 @@ void MainWindow::on_checkorderStatus_clicked()
     ui->stackedWidget->setCurrentWidget(ui->orderStatusPage);
 }
 
-// ✅ NEW: VIEW HISTORY BUTTON
 void MainWindow::on_viewhistoryButton_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->OrderHistoryPage);
