@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(socket, &QTcpSocket::readyRead, this, &MainWindow::onReadyRead);
 
     socket->connectToHost("127.0.0.1", 8080);
+    ui->stackedWidget->setCurrentWidget(ui->welcomePage);
 }
 
 MainWindow::~MainWindow()
